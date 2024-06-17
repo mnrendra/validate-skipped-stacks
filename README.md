@@ -1,4 +1,49 @@
 # @mnrendra/validate-skipped-stacks
 Validate skipped stacks.
 
-Created by [GitOps](https://gitops.sh).
+## Install
+```bash
+npm i @mnrendra/validate-skipped-stacks
+```
+
+## Usage
+
+Using `CommonJS`:
+```javascript
+const validateSkippedStacks = require('@mnrendra/validate-skipped-stacks')
+
+const validSkippedStacks = validateSkippedStacks('skipped-stack')
+console.log('synchronously:', validSkippedStacks)
+// Output: ['skipped-stack']
+
+const validSkippedStacks = validateSkippedStacks('skipped-stack', 'additional-skipped-stack')
+console.log('synchronously:', validSkippedStacks)
+// Output: ['skipped-stack', 'additional-skipped-stack']
+
+const validSkippedStacks = validateSkippedStacks('skipped-stack', ['additional-skipped-stack'])
+console.log('synchronously:', validSkippedStacks)
+// Output: ['skipped-stack', 'additional-skipped-stack']
+```
+
+Using `ES Module`:
+```javascript
+import validateSkippedStacks from '@mnrendra/validate-skipped-stacks'
+
+const validSkippedStacks = validateSkippedStacks('skipped-stack')
+console.log('synchronously:', validSkippedStacks)
+// Output: ['skipped-stack']
+
+const validSkippedStacks = validateSkippedStacks('skipped-stack', 'additional-skipped-stack')
+console.log('synchronously:', validSkippedStacks)
+// Output: ['skipped-stack', 'additional-skipped-stack']
+
+const validSkippedStacks = validateSkippedStacks('skipped-stack', ['additional-skipped-stack'])
+console.log('synchronously:', validSkippedStacks)
+// Output: ['skipped-stack', 'additional-skipped-stack']
+```
+
+## License
+[MIT](https://github.com/mnrendra/read-packag/blob/HEAD/LICENSE)
+
+## Author
+[@mnrendra](https://github.com/mnrendra)
