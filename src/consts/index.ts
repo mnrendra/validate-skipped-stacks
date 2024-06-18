@@ -1,1 +1,3 @@
-export const SKIPPED_STACK: string = 'node_modules/@mnrendra/validate-skipped-stacks'
+import { normalize } from 'node:path'
+
+export const SKIPPED_STACK: string = normalize('node_modules/@mnrendra/validate-skipped-stacks')
