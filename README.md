@@ -13,15 +13,15 @@ Using `CommonJS`:
 const validateSkippedStacks = require('@mnrendra/validate-skipped-stacks')
 
 const validSkippedStacks = validateSkippedStacks('skipped-stack')
-console.log('synchronously:', validSkippedStacks)
+console.log(validSkippedStacks)
 // Output: ['skipped-stack']
 
 const validSkippedStacks = validateSkippedStacks('skipped-stack', 'additional-skipped-stack')
-console.log('synchronously:', validSkippedStacks)
+console.log(validSkippedStacks)
 // Output: ['skipped-stack', 'additional-skipped-stack']
 
 const validSkippedStacks = validateSkippedStacks('skipped-stack', ['additional-skipped-stack'])
-console.log('synchronously:', validSkippedStacks)
+console.log(validSkippedStacks)
 // Output: ['skipped-stack', 'additional-skipped-stack']
 ```
 
@@ -30,20 +30,20 @@ Using `ES Module`:
 import validateSkippedStacks from '@mnrendra/validate-skipped-stacks'
 
 const validSkippedStacks = validateSkippedStacks('skipped-stack')
-console.log('synchronously:', validSkippedStacks)
+console.log(validSkippedStacks)
 // Output: ['skipped-stack']
 
 const validSkippedStacks = validateSkippedStacks('skipped-stack', 'additional-skipped-stack')
-console.log('synchronously:', validSkippedStacks)
+console.log(validSkippedStacks)
 // Output: ['skipped-stack', 'additional-skipped-stack']
 
 const validSkippedStacks = validateSkippedStacks('skipped-stack', ['additional-skipped-stack'])
-console.log('synchronously:', validSkippedStacks)
+console.log(validSkippedStacks)
 // Output: ['skipped-stack', 'additional-skipped-stack']
 ```
 
 ## License
-[MIT](https://github.com/mnrendra/read-packag/blob/HEAD/LICENSE)
+[MIT](https://github.com/mnrendra/validate-skipped-stacks/blob/HEAD/LICENSE)
 
 ## Author
 [@mnrendra](https://github.com/mnrendra)
