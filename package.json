@@ -1,6 +1,6 @@
 {
   "name": "@mnrendra/validate-skipped-stacks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Validate skipped stacks.",
   "private": false,
   "main": "dist/index.js",
