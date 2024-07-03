@@ -1,28 +1,26 @@
-import { SKIPPED_STACK } from '@consts'
+import { SKIPPED_STACK } from '@/consts'
 
-import mainStub from '@tests/stubs/main'
-
-import main from '.'
+import index from '.'
 
 describe('Test all features:', () => {
   describe('Test `main` feature:', () => {
     it('Should return a valid skipped-stacks when given a skipped-stack!', () => {
-      const received = main(SKIPPED_STACK)
-      const expected = mainStub()
+      const received = index(SKIPPED_STACK)
+      const expected = [SKIPPED_STACK]
 
       expect(received).toEqual(expected)
     })
 
     it('Should return a valid skipped-stacks when given a skipped-stack and a `skippedStacks` option with a string!', () => {
-      const received = main(SKIPPED_STACK, 'any')
-      const expected = [...mainStub(), 'any']
+      const received = index(SKIPPED_STACK, 'any')
+      const expected = [SKIPPED_STACK, 'any']
 
       expect(received).toEqual(expected)
     })
 
     it('Should return a valid skipped-stacks when given a skipped-stack and a `skippedStacks` option with a list of strings!', () => {
-      const received = main(SKIPPED_STACK, ['any'])
-      const expected = [...mainStub(), 'any']
+      const received = index(SKIPPED_STACK, ['any'])
+      const expected = [SKIPPED_STACK, 'any']
 
       expect(received).toEqual(expected)
     })
