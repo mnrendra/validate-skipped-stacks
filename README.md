@@ -10,7 +10,7 @@ npm i @mnrendra/validate-skipped-stacks
 
 Using `CommonJS`:
 ```javascript
-const validateSkippedStacks = require('@mnrendra/validate-skipped-stacks')
+const { validateSkippedStacks } = require('@mnrendra/validate-skipped-stacks')
 
 const validSkippedStacks = validateSkippedStacks('skipped-stack')
 console.log(validSkippedStacks)
@@ -27,7 +27,7 @@ console.log(validSkippedStacks)
 
 Using `ES Module`:
 ```javascript
-import validateSkippedStacks from '@mnrendra/validate-skipped-stacks'
+import { validateSkippedStacks } from '@mnrendra/validate-skipped-stacks'
 
 const validSkippedStacks = validateSkippedStacks('skipped-stack')
 console.log(validSkippedStacks)
