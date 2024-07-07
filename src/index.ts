@@ -10,4 +10,6 @@ export type {
   ValidSkippedStacks
 }
 
-export default main
+export {
+  main as validateSkippedStacks
+}
