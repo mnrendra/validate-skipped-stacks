@@ -1,12 +1,12 @@
 import type { SkippedStacks, ValidSkippedStacks } from './types'
 
 /**
- * Validate a name or a list of names of the stack traces to be skipped.
+ * Validate a name or a list of names of stack traces that need to be skipped.
  *
- * @param {string} skippedStack - A name of a stack trace to be skipped.
- * @param {SkippedStacks} [skippedStacks] - Optional skipped stacks.
+ * @param {string} skippedStack - A name of a stack trace that need to be skipped.
+ * @param {SkippedStacks} [skippedStacks] - Optional a name or a list of names of stack traces that need to be skipped.
  *
- * @returns {string[]} A list of stack names to be skipped.
+ * @returns {ValidSkippedStacks} A list of names of stack traces that need to be skipped.
  *
  * @see https://www.npmjs.com/package/@mnrendra/validate-skipped-stacks
  */
@@ -22,7 +22,7 @@ const validateSkippedStacks = (
   // Add `skippedStack` as the first element of `validSkippedStacks`.
   validSkippedStacks.unshift(skippedStack)
 
-  // Return valid skipped stacks.
+  // Return a valid skipped stacks.
   return validSkippedStacks
 }
 
