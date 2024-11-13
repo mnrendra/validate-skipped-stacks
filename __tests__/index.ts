@@ -1,6 +1,6 @@
 import { SKIPPED_STACK } from '@/consts'
 
-import { validateSkippedStacks } from '.'
+import { validateSkippedStacks } from '..'
 
 describe('Test all features:', () => {
   describe('Test `validateSkippedStacks` feature:', () => {

@@ -1,6 +1,7 @@
 /**
- * Skipped stacks argument. It can be a string or a list of strings. Make sure
- * the string(s) is/are the name(s) of the stack trace(s) to be skipped.
+ * A name or a list of names of stack traces that need to be skipped.
+ * 
+ * @default []
  *
  * @see https://www.npmjs.com/package/@mnrendra/validate-skipped-stacks
  */
