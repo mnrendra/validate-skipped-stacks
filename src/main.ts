@@ -3,10 +3,13 @@ import type { SkippedStacks, ValidSkippedStacks } from './types'
 /**
  * Validate a name or a list of names of stack traces that need to be skipped.
  *
- * @param {string} skippedStack - A name of a stack trace that need to be skipped.
- * @param {SkippedStacks} [skippedStacks] - Optional a name or a list of names of stack traces that need to be skipped.
+ * @param {string} skippedStack - A name of a stack trace that need to be
+ * skipped.
+ * @param {SkippedStacks} [skippedStacks] - Optional a name or a list of names
+ * of stack traces that need to be skipped.
  *
- * @returns {ValidSkippedStacks} A list of names of stack traces that need to be skipped.
+ * @returns {ValidSkippedStacks} A list of names of stack traces that need to be
+ * skipped.
  *
  * @see https://www.npmjs.com/package/@mnrendra/validate-skipped-stacks
  */
