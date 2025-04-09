@@ -1,6 +1,6 @@
 {
   "name": "@mnrendra/validate-skipped-stacks",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Validate a name or a list of names of stack traces that need to be skipped.",
   "private": false,
   "main": "dist/index.js",
